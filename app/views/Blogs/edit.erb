@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/blogs/<%= @blog.id%>" method="post">
+        <input type="hidden" name="_method" value="patch">
+        <h2>Edit This Post</h2>
+        <p><input type="text" name="blog[title]" value="<%= @blog.title %>">
+        <p><textarea name="blog[content]" rows="40" cols="200"><%= @blog.content %></textarea>
+        <p><input type="submit" value="Edit">
+        </form>
+</body>
+</html>

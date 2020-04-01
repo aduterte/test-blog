@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Blogs</h2>
+    <ul>
+    <% @blogs.each do |blog| %>
+    <li>
+    <a href="/blogs/<%= blog.id%>"><%= blog.title%></a> <%= blog.entry_date %>
+    </li>
+   
+        <% end %>
+     </ul>
+    <BR>
+    <a href="/blogs/new">Create a new Post</a>
+
+</body>
+</html>

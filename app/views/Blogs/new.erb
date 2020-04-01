@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+    <h1>Post New Blog</h1>
+        <form action="/blogs" method="post">
+            <label name="title">Title</label><br>
+            <input type="text" name="title"><br>
+            <label name="content">Title</label><br>
+            <textarea type="text" name="content" rows="40" cols="200"></textarea><br>
+            <input type="hidden" name="entry_date" value="<%= Date.today %>%">
+            <input type="submit" value="Post">
+        </form>
+</div>
+
+    
+</body>
+</html>
